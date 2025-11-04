@@ -23,7 +23,7 @@ const EventsSection = () => {
             </p>
           </div>
         </div>
-     
+
         <div className="w-full p-6">
           <PropertySlider />
         </div>
