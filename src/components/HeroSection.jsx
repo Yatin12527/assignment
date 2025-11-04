@@ -3,7 +3,7 @@ import PropertySlider from "./ui/gallery";
 const HeroSection = () => {
   return (
     <div className="min-h-screen flex flex-col items-start  mt-15 sm:mt-25 p-5 sm:pl-30">
-      <div className="max-w-7xl w-full grid md:grid-cols-[55%_45%] gap-12 md:gap-60 mb-15">
+      <div className="max-w-6xl w-full grid md:grid-cols-[55%_45%] gap-12 md:gap-60 mb-15">
         <div className="space-y-8">
           <h1
             className="font-cormorant text-5xl md:text-7xl lg:text-[132px] leading-tight"
