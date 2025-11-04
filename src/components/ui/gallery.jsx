@@ -67,7 +67,7 @@ const PropertySlider = () => {
             </div>
           </div>
         </div>
-        <div className="h-1 bg-gray-800 relative overflow-hidden -mt-5 w-full md:w-[38.8%]">
+        <div className="h-1 bg-gray-800 relative overflow-hidden -mt-5 w-full md:w-[41.8%]">
           <div
             className="absolute left-0 top-0 h-full bg-gray-200/90 transition-all duration-500 ease-out"
             style={{
