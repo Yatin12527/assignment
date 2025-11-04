@@ -6,7 +6,7 @@ const HeroSection = () => {
       <div className="max-w-6xl w-full grid md:grid-cols-[55%_45%] gap-12 md:gap-60 mb-15">
         <div className="space-y-8">
           <h1
-            className="font-cormorant text-5xl md:text-7xl lg:text-[132px] leading-tight"
+            className="font-cormorant text-5xl md:text-5xl lg:text-9xl leading-tight"
             style={{ color: "#0A1F1A" }}
           >
             <span className="whitespace-nowrap">WELCOME TO</span>
