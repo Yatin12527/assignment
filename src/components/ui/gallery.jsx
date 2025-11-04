@@ -75,7 +75,7 @@ const PropertySlider = () => {
             }}
           ></div>
         </div>
-        <div className="flex sm:w-[600px]  w-full items-center justify-between  bg-white p-6 ">
+        <div className="flex sm:w-[580px]  w-full items-center justify-between  bg-white p-6 ">
           <div className="flex items-center gap-8">
             <span className="text-lg md:text-xl font-light text-gray-600">
               {String(currentIndex + 1).padStart(2, "0")}
