@@ -42,12 +42,10 @@ const PropertySlider = () => {
                 alt={properties[currentIndex].title}
                 className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
               />
-              {/* Subtle Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"></div>
             </div>
           </div>
 
-          {/* Secondary Images */}
           <div className="hidden md:flex gap-3 w-[52%]">
             <div className="w-1/2 relative group">
               <div className="relative h-[400px] w-full overflow-hidden bg-gray-400">
@@ -71,10 +69,7 @@ const PropertySlider = () => {
             </div>
           </div>
         </div>
-        <div
-          className="h-[4px] bg-gray-800 relative overflow-hidden -mt-5"
-          style={{ width: `${94.8}%` }}
-        >
+        <div className="h-1 bg-gray-800 relative overflow-hidden -mt-5 w-full md:w-[41.8%]">
           <div
             className="absolute left-0 top-0 h-full bg-gray-200/90 transition-all duration-500 ease-out"
             style={{
@@ -92,8 +87,6 @@ const PropertySlider = () => {
               {properties[currentIndex].title}
             </h2>
           </div>
-
-          {/* Next Button */}
           <button
             onClick={handleNext}
             className="flex items-center gap-2 text-gray-900 hover:text-gray-600 transition-colors duration-300 group"

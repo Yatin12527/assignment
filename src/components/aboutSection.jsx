@@ -41,7 +41,7 @@ const AboutSection = () => {
   };
 
   return (
-    <div className="w-full min-h-screen py-16 px-8 lg:px-16">
+    <div className="w-full min-h-screen py-16 px-8 lg:px-16" id="about">
       <div className="max-w-[1600px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left Column */}

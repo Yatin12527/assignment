@@ -2,6 +2,7 @@ import { CiGlobe } from "react-icons/ci";
 import { GoArrowUpRight } from "react-icons/go";
 import { AiOutlineMenu } from "react-icons/ai";
 import { HiOutlineXMark } from "react-icons/hi2";
+import { FaChevronDown } from "react-icons/fa6";
 import { useState } from "react";
 
 const Navigation = () => {
@@ -11,7 +12,7 @@ const Navigation = () => {
     <nav className="w-full py-8 px-4 sm:px-6 lg:px-10 text-[#0A1F1A]">
       <div className="flex items-center justify-between max-w-[1600px] mx-auto">
         <div className="hidden lg:flex items-center gap-16">
-          <div className="flex items-center gap-8 text-sm font-light tracking-wide">
+          <div className="flex items-center gap-8 text-sm  tracking-wide ">
             <a href="#home" className="hover:opacity-70 transition-opacity">
               HOME
             </a>
@@ -45,6 +46,8 @@ const Navigation = () => {
           <button className="flex items-center gap-2 text-sm font-light">
             <CiGlobe className="w-4 h-4" />
             <span>EN</span>
+            <FaChevronDown />
+
           </button>
           <span className="text-sm font-light border-l-2 pl-5 border-l-[#0A1F1A]">
             +123 7564 8970
