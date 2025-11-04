@@ -36,7 +36,7 @@ const Navigation = () => {
 
         <div className="lg:absolute lg:left-1/2 lg:-translate-x-1/2 flex items-center gap-2">
           <img src="/Logomark.png" alt="Logo" className="w-6 h-6" />
-          <span className="font-serif text-xl tracking-widest">
+          <span className=" text-xl tracking-tighter font-cormorant">
             <i>L</i>UXORT
           </span>
         </div>
@@ -49,7 +49,7 @@ const Navigation = () => {
           <span className="text-sm font-light border-l-2 pl-5 border-l-[#0A1F1A]">
             +123 7564 8970
           </span>
-          <button className="flex items-center gap-2 text-sm font-light tracking-wide hover:opacity-70 transition-opacity">
+          <button className="flex items-center gap-2 text-sm font-light tracking-wide hover:opacity-70 transition-opacity border-b-2 border-b-[#0A1F1A]">
             LOGIN
             <GoArrowUpRight className="w-4 h-4" />
           </button>
