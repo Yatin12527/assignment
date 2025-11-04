@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaChevronRight } from "react-icons/fa6";
 
 const PropertySlider = () => {
@@ -32,9 +32,7 @@ const PropertySlider = () => {
   return (
     <div className="w-full ">
       <div className="max-w-[1600px] mx-auto">
-        {/* Slider Container */}
         <div className="relative flex gap-3 overflow-hidden">
-          {/* Main Active Image */}
           <div className="w-full md:w-[42%] relative group">
             <div className="relative h-[200px] md:h-[400px] overflow-hidden">
               <img
@@ -78,7 +76,6 @@ const PropertySlider = () => {
           ></div>
         </div>
         <div className="flex sm:w-[650px]  w-full items-center justify-between  bg-white p-6 ">
-          {/* Counter and Title */}
           <div className="flex items-center gap-8">
             <span className="text-lg md:text-xl font-light text-gray-600">
               {String(currentIndex + 1).padStart(2, "0")}

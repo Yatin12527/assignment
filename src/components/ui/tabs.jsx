@@ -1,6 +1,5 @@
 import * as React from "react";
 
-// Minimal className join helper
 function cn(...classes) {
   return classes.filter(Boolean).join(" ");
 }

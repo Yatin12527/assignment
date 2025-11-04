@@ -12,7 +12,14 @@ const AccordionContext = React.createContext({
   collapsible: true,
 });
 
-export function Accordion({ value, onValueChange, children, className, type = "single", collapsible = true }) {
+export function Accordion({
+  value,
+  onValueChange,
+  children,
+  className,
+  type = "single",
+  collapsible = true,
+}) {
   const [activeItem, setActiveItem] = React.useState(value ?? null);
 
   React.useEffect(() => {
@@ -25,7 +32,6 @@ export function Accordion({ value, onValueChange, children, className, type = "s
       type,
       collapsible,
       setActiveItem: (next) => {
-        // Only single mode supported; ignore arrays.
         let newValue = next;
         if (type === "single") {
           if (collapsible && next === activeItem) {
@@ -39,7 +45,11 @@ export function Accordion({ value, onValueChange, children, className, type = "s
     [activeItem, onValueChange, type, collapsible]
   );
 
-  return <AccordionContext.Provider value={ctx}><div className={className}>{children}</div></AccordionContext.Provider>;
+  return (
+    <AccordionContext.Provider value={ctx}>
+      <div className={className}>{children}</div>
+    </AccordionContext.Provider>
+  );
 }
 
 const ItemValueContext = React.createContext(null);
@@ -50,7 +60,12 @@ export const AccordionItem = React.forwardRef(function AccordionItem(
 ) {
   return (
     <ItemValueContext.Provider value={value}>
-      <div ref={ref} data-value={value} className={cn("border-b", className)} {...props}>
+      <div
+        ref={ref}
+        data-value={value}
+        className={cn("border-b", className)}
+        {...props}
+      >
         {children}
       </div>
     </ItemValueContext.Provider>
@@ -78,7 +93,12 @@ export const AccordionTrigger = React.forwardRef(function AccordionTrigger(
       {...props}
     >
       {children}
-      <FaChevronDown className={cn("h-4 w-4 shrink-0 transition-transform duration-200", isOpen && "rotate-180")} />
+      <FaChevronDown
+        className={cn(
+          "h-4 w-4 shrink-0 transition-transform duration-200",
+          isOpen && "rotate-180"
+        )}
+      />
     </button>
   );
 });
