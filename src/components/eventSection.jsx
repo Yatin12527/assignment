@@ -23,7 +23,7 @@ const EventsSection = () => {
             </p>
           </div>
         </div>
-        {/* PropertySlider component would go here */}
+     
         <div className="w-full p-6">
           <PropertySlider />
         </div>
