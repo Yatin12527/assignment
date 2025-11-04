@@ -5,7 +5,7 @@ const HeroSection = () => {
     <div className="min-h-screen flex flex-col mt-15 sm:mt-25 p-5 sm:pl-30">
       {/* Hero Content */}
       <div className="w-full mb-12">
-        <div className="flex justify-around ">
+        <div className="sm:flex justify-around flex-col ">
           {/* Left: Heading */}
           <div>
             <h1 className="font-cormorant text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-tight text-[#0A1F1A]">
