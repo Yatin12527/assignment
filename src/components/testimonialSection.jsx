@@ -101,7 +101,7 @@ const TestimonialsSection = () => {
                     className="bg-white p-6 space-y-4"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-full bg-gray-200 flex-shrink-0" />
+                      <div className="w-12 h-12 rounded-full bg-gray-200 shrink-0" />
                       <div className="flex-1">
                         <p className="font-medium text-sm">{testimonial.name}</p>
                         <p className="text-xs text-gray-500">
