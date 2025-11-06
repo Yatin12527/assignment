@@ -12,7 +12,7 @@ const AboutSection = () => {
       mainImage:
         "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1200&q=80",
       sideImage:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const AboutSection = () => {
       mainImage:
         "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
       sideImage:
-        "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80",
+        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80",
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const AboutSection = () => {
       mainImage:
         "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80",
       sideImage:
-        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&q=80",
+        "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1200&q=80",
     },
   ];
 
@@ -65,7 +65,7 @@ const AboutSection = () => {
 
               {/* Founder Info */}
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-gray-400 flex-shrink-0"></div>
+                <div className="w-16 h-16 rounded-full bg-gray-400 shrink-0"></div>
                 <div>
                   <p className="text-[#0A1F1A] font-medium text-lg">
                     Roberto Pollye
@@ -96,14 +96,14 @@ const AboutSection = () => {
             <div className="flex-1 flex flex-col">
               {/* Images */}
               <div className="flex gap-4">
-                <div className="flex-[3] h-[320px] lg:h-[400px] bg-gray-300 rounded overflow-hidden">
+                <div className="flex-3 h-80 lg:h-[400px] bg-gray-300 rounded overflow-hidden">
                   <img
                     src={slides[currentIndex].mainImage}
                     alt={slides[currentIndex].title}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="flex-[2] h-[320px] lg:h-[400px] bg-gray-500 rounded overflow-hidden">
+                <div className="flex-2 h-80 lg:h-[400px] bg-gray-500 rounded overflow-hidden">
                   <img
                     src={slides[currentIndex].sideImage}
                     alt="Side view"
